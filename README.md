@@ -27,6 +27,11 @@ Requirementで列挙したライブラリなどのインストール方法を説
 
 ```bash
 pip install huga_package
+docker-compose build
+docker-compose run --rm app /bin/bash
+npm install
+npm install --save sequelize
+npx sequelize-cli init
 ```
 
 # Usage
@@ -59,11 +64,7 @@ python demo.py
 社内向けなら社外秘であることを明示してる
 
 "hoge" is Confidential.
-docker-compose build
-docker-compose run --rm app /bin/bash
-npm install
-npm install --save sequelize
-npx sequelize-cli init
+
 # Name（リポジトリ/プロジェクト/OSSなどの名前）
  
 分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
